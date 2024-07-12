@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: rgb(47, 9, 56);
+    padding: 50px;
+}
+
+body nav {
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+body nav ul {
+    padding: 10px;
+}
+
+body nav ul li {
+    display: inline;
+}
+
+body nav ul li a {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    padding: 5px 10px;
+    background-color: azure;
+    border-radius: 3px;
+}
+
+footer {
+    background-color: black;
+    padding: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        display: flex;
+        justify-content: space-between; /* Memisahkan .box-name dan .box-detail */
+        color: rgb(153, 240, 255);
+    }
+
+    .box-name {
+
+        background: linear-gradient(135deg, rgb(185, 16, 188), rgb(11, 79, 196));
+        padding: 10px;
+        width: 400px;
+        text-align: center;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+
+    .box-name .nama {
+        font-size: xx-large;
+        font-weight: bold;
+    }
+
+    .box-name .skills {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .detail-profile {
+        width: 400px; /* Lebar untuk .detail-profile */
+        margin-right: 20px; /* Jarak antara .box-name dan .detail-profile */
+    }
+
+    .box-detail {
+        padding: 30px;
+        flex: 1; /* Mengisi ruang tersisa di kanan .detail-profile */
+        border-radius: 10px;
+        background: linear-gradient(135deg, rgb(185, 16, 188), rgb(11, 79, 196));
+        color: rgb(153, 240, 255);
+    }
+    .h2{
+        color: rgb(153, 240, 255);
+    }
+    
+    .form-detail th {
+        padding-right: 20px;
+        color: rgb(153, 240, 255);
+    }
+
+    .form-detail td {
+        padding-right: 20px;
+        color: rgb(153, 240, 255);
+    }
+
+    .medsos {
+        margin-top: 20px;
+        color: rgb(153, 240, 255);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        margin: 0 auto;
+        flex-direction: column; /* Tata letak satu kolom untuk layar kecil */
+        align-items: center; /* Pusatkan item di tengah pada layar kecil */
+    }
+
+    body nav {
+        padding: 10px;
+        background-color: black;
+    }
+
+    body nav ul {
+        padding: 10px;
+        text-align: center;
+    }
+
+    body nav ul li {
+        display: inline;
+        color: rgb(153, 240, 255);
+
+    }
+
+    body nav ul li a {
+        text-decoration: none;
+        color: rgb(153, 240, 255);
+        padding: 5px 10px;
+        background-color: aliceblue;
+        border-radius: 2px;
+    }
+
+    .box-name {
+        background-color: aliceblue;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .box-name img {
+        width: 20%;
+    }
+
+    .box-name .nama {
+        font-size: xx-large;
+        font-weight: bold;
+    }
+
+    .box-name .skills {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .detail-profile,
+    .box-detail {
+        width: 100%; /* Mengisi lebar penuh pada layar kecil */
+        margin-right: 0;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: aliceblue;
+        padding: 10px;
+    }
+
+    .form-detail td {
+        margin-top: 20px;
+        color: rgb(121, 255, 246);
+    }
+
+    .medsos {
+        margin-top: 20px;
+    }
+}

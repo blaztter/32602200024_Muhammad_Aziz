@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: rgb(47, 9, 56);
+    padding: 30px;
+}
+
+body nav {
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+body nav ul {
+    padding: 10px;
+    list-style-type: none;
+}
+
+body nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+body nav ul li a {
+    text-decoration: none;
+    color: rgb(153, 240, 255);
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+footer {
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    color: aliceblue;
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        color: rgb(153, 240, 255);
+    }
+
+    .box-name {
+        background: linear-gradient(135deg, rgb(185, 16, 188), rgb(11, 79, 196));
+        padding: 20px;
+        width: 400px;
+        text-align: center;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+
+    .box-name .nama {
+        font-size: xx-large;
+        font-weight: bold;
+    }
+
+    .box-name .skills {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .detail-profile {
+        width: 400px;
+        margin-right: 20px;
+    }
+
+    .box-detail {
+        padding: 30px;
+        flex: 1;
+        border-radius: 10px;
+        background: linear-gradient(135deg, rgb(185, 16, 188), rgb(11, 79, 196));
+        color: rgb(153, 240, 255);
+    }
+
+    .form-detail th,
+    .form-detail td {
+        padding-right: 20px;
+        color: rgb(153, 240, 255);
+    }
+
+    .medsos {
+        margin-top: 20px;
+        color: rgb(153, 240, 255);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .box-name {
+        background-color: rgb(8, 8, 8);
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .box-name img {
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .box-name .nama {
+        font-size: x-large;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .box-name .skills {
+        font-size: medium;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .detail-profile,
+    .box-detail {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: rgb(8, 8, 8);
+        padding: 20px;
+        color: rgb(153, 240, 255);
+    }
+
+    .form-detail td {
+        margin-top: 20px;
+        color: rgb(121, 255, 246);
+    }
+
+    .medsos {
+        margin-top: 20px;
+    }
+}
